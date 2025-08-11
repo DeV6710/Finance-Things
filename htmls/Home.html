@@ -5,27 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="/Finance-Things/css/Home.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+    </style>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script defer src="../js/firebase.js"></script>
+    <script defer src="../js/Home.js"></script>
 </head>
 <body>
     <!-- Thien NAv -->
 
     <nav class="navbar">
-        <div class="logo"></div>
+        <img src="../imgs/logo.png" alt=""  id="logo" width="120px">
         <ul id="bgColor" class="nav-links">
             <li><a href="home.html">Home</a></li>
-            <li>About</li>
+            <li><a href="#about">About</a></li>
             <li><a href="Dashborard.html">Learn</a></li>
-            <li>Feedback</li>
+            <li><a href="#feedBack">Feedback</a></li>
         </ul>
     </nav>
 
     <!-- Thien Home page -->
-    
+     <div id="home">
+        <img src="../imgs/Home.jpg" class="homeIMG" width="50%">
+        <div id="home_container">
+            <h1 class="homeh1">Welcome to Finance Things</h1>
+            <p class="homeP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto impedit animi aut consequatur sint dolorem id quis saepe, modi magni totam praesentium fuga debitis eius aperiam ab a recusandae?</p>
+            <br>
+            <a href="../htmls/Dashborard.html" class="button-link">Let get started</a>
+        </div>
+     </div>
     <!-- Avery About -->
-     <div id="about">
-     <h1>About Us</div>h1>
- 
-     
+    
+  
+    <div id="about">
+        <img src="../imgs/about.jpg" alt="" id="aboutImg" width="400px" height="250px">
+        <div id="container">
+            <h1>About Us</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi corrupti esse error ratione repellat. Quod omnis adipisci voluptatibus at ab placeat, obcaecati iure expedita? Alias iste natus consequatur provident.</p>
+            <div id="lists">
+                <!-- Your LinkedIns account here  -->
+                 <ul>
+                <li><a href="#feedBack" target="_blank">Avery</a><img src="../imgs/ln.png" alt="" class="ln"></li>
+                <li><a href="#feedBack" target="_blank">Princeden</a><img src="../imgs/ln.png" alt=""  class="ln"></li>
+                <li><a href="#feedBack" target="_blank">Thien</a><img src="../imgs/ln.png" alt=""  class="ln"></li>
+                <li><a href="#feedBack" target="_blank">Youssef</a><img src="../imgs/ln.png" alt=""  class="ln"></li>
+                </ul>
+            </div>
+        </div>
         
      </div>
     <!-- Youssef Feedback -->
@@ -39,21 +72,19 @@
                 </fieldset>
                 <fieldset>
                     <legend>Email :</legend>
-                    <input type="text" name="" id="email" placeholder="Email">
+                    <input type="email" name="" id="email" placeholder="Email">
                 </fieldset>
                  <fieldset>
-                    <legend>Text :</legend>
-                    <textarea name="" id="text" placeholder="Your Message">
-                        
-                    </textarea>
+                    <legend>Message :</legend>
+                   <textarea name="" id="text" placeholder="Your Message"></textarea>
                 </fieldset>
+                <button id="submit">Submit</button>
             </form>
-            <button id="submit">Submit</button>
+            
         </div>
     </div>
     <!-- Avery Feedback -->
-        
-
-
+        <footer><h2>© By Team Finance Things</h2><img src="../imgs/logo.png" alt="" width="85px"></footer>
+   
 </body>
 </html>
