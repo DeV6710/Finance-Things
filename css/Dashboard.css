@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors & Fonts */
+:root {
+    --primary: #004b87; /* Deep finance blue */
+    --secondary: #f5f8fa; /* Soft background */
+    --accent: #00bfa5; /* Teal accent */
+    --text-dark: #222;
+    --text-light: #fff;
+    --hover: #00365f;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary);
+    color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px white solid;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+#menu{
+    display: none;
+}
+
+#logo {
+    width: 88px;
+}
+
+#unitoneParent{
+    position: relative;
+}
+#unitoneParent h1{
+    font-size: 55px;
+}
+
+#unit-1{
+    background-color: #ffffff;
+    width: 70%;
+    height: 30vh;
+    margin:  auto;
+    margin-top: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: #00365f 10px solid;
+    border-radius: 50px;
+}
+
+.dropDown{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pressed{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.arrows{
+    transform: rotate(180deg);
+}
+
+
+.dropDown ul{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.dropDown ul li{
+    margin: 0 auto;
+    list-style: none;
+    margin: 25px;
+    font-family: Arial;
+    font-size: 75px;
+    border: 5px #00365f solid;
+    padding: 15px;
+     border-radius: 25px;
+    margin: 15px  auto;
+
+}
+.dropDown ul li a{
+    text-decoration: none;
+    color: black;
+
+
+}
+
+
+#unit-2{
+     background-color: #ffffff;
+    width: 70%;
+    height: 30vh;
+
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: #00365f 10px solid;
+    border-radius: 50px;
+    margin:  auto;
+}
+
+#unittwoParent{
+    position: relative;
+}
+@media (max-width: 768px) {
+    .navbar {
+    background-color: var(--primary);
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #unit-1{
+         margin-top: 300px;
+    }
+    #unit-1, #unit-2 {
+        width: 95%;
+        height: auto;
+       
+    }
+
+    .dropDown ul li {
+        font-size: 1.8rem;
+    }
+
+    #menu{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .menuitmes{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:90%;
+        right: 0;
+        width: 100%;
+        z-index: 998;
+        background-color: #00bfa5;
+        text-align: center;
+        padding: 8px;  
+        color: var(--text-dark);
+    }
+   
+   li {
+            color: var(--text-dark);
+            border: #222 3px solid;
+            padding: 15px;
+    }
+}
