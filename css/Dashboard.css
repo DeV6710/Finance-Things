@@ -148,7 +148,8 @@ body {
 @media (max-width: 768px) {
     .navbar {
     background-color: var(--primary);
-        flex-direction: column;
+       flex-direction: row;
+      justify-content: space-between;
         gap: 10px;
         font-size: 1.2rem;
     }

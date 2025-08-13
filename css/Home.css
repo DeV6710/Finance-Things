@@ -69,7 +69,7 @@ body {
 
 .homeIMG {
     margin-top: 50px;
-    max-width: 100%;
+    max-width: 40%;
     border-radius: 8px;
 }
 
@@ -215,8 +215,8 @@ footer {
         width: 80%;
     }
 
-    #homeIMG{
-        width: 100%;
+    .homeIMG{
+         max-width: 100%;
     }
 
     #menu{

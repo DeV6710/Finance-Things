@@ -2,33 +2,63 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Lesson</title>
  <link rel="stylesheet" href="../css/Learning.css">
 
-  <title>Lesson</title>
 </head>
 <body>
-    <div class="lessonContent">
-     <h1>Lesson 1: Lorem Ipsum</h1>
-     <video controls>
-        <source src="test.mp4" type="video/mp4">
-      </video>
-      <div class="lessonSummary">
-        <h1>Lesson Summary</h1>
-        <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, ex quis iaculis porta, leo tortor laoreet arcu, quis consectetur urna nisi non elit. Aenean tempor lorem sed erat accumsan, eu rutrum elit feugiat. Duis a massa leo. Aliquam a tortor erat. Duis non dignissim elit. Fusce interdum tortor eu quam efficitur, sed convallis libero pulvinar. Ut tellus risus, varius eu elit vitae, dapibus feugiat purus. Suspendisse potenti.
+      <!-- nav -->
+    <nav class="navbar">
+        <img src="../imgs/logo.png" alt=""  id="logo" width="120px">
+         <img src="../imgs/menu (2).png" alt="" id="menu">
+        <ul  class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="Dashborard.html">Learn</a></li>
+            <li><a href="../index.html#feedBack">Feedback</a></li>
+            <li><a href="../htmls/Tool.html" target="_blank">Tools</a></li>
+            <li><a href="../htmls/Blogs.html" target="_blank">Blogs</a></li>
+        </ul>
+    </nav>
 
-Proin vel commodo libero. Morbi blandit, erat in condimentum aliquet, enim purus fermentum mi, ut commodo erat ipsum a ex. Ut gravida ullamcorper est, in viverra leo scelerisque vulputate. Morbi nulla elit, suscipit ac ipsum at, tempor feugiat leo. Duis velit mi, semper ut metus id, faucibus faucibus ante. Vivamus ac nibh augue. Sed mollis faucibus ligula, id dictum ante. Quisque pretium sem nec lectus dignissim, feugiat pharetra ex sodales. </p>
-      </div>
-    </div>
-      <div class="quiz">
+    <main class="lesson-wrapper">
+        <header class="lesson-header">
+            <h1>Lesson 1: The 50/30/20 Rule</h1>
+        </header>
 
-         <h1> Quiz </h1> 
-         <div class="questionsContainer">
-        </div>
-        <button id="submit">Get Results</button>
-        <div class="resultsContainer"></div>
-      </div>
-      
-    
-   <script src="../js/learn.js"></script>
+        <section class="lesson-video">
+            <!-- <video controls>
+                <source src="https://www.youtube.com/watch?v=LKxOamnP8J4" type="video/mp4">
+            </video> -->
+            <iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/LKxOamnP8J4" >
+            </iframe>
+        </section>
+
+        <section class="lesson-card">
+            <h2>Lesson Summary</h2>
+            <span id="lessonSummary">
+              <p>
+                The 50/30/20 rule is a simple yet effective budgeting framework that helps individuals manage their money by dividing after-tax income into three clear categories: 50% for needs, 30% for wants, and 20% for savings and debt repayment. The needs category covers essential expenses required for basic living, such as rent or mortgage payments, utilities, groceries, transportation, insurance, and minimum loan payments. The wants category includes discretionary spending that improves quality of life, like dining out, entertainment, travel, hobbies, and non-essential shopping. The final 20% is allocated toward building financial security—this includes saving for emergencies, retirement accounts, investments, and paying down debt beyond the minimums. By following this method, people can maintain a balanced approach to spending and saving, avoid overextending themselves financially, and steadily work toward long-term goals. While the percentages can be adjusted to suit personal circumstances, the 50/30/20 rule serves as a flexible guideline for creating sustainable financial habits without feeling overly restrictive. 
+              </p>
+              <p>
+               
+              </p>
+            </span>
+        </section>
+
+        <section class="lesson-card quiz">
+            <h2>Quiz</h2>
+            <div class="questionsContainer"></div>
+            <button id="submit">Get Results</button>
+            <div class="resultsContainer"></div>
+        </section>
+    </main>
+
+    <script src="../js/learn.js">
+        loadLesson("lesson1")
+    </script>
 </body>
 </html>
