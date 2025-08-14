@@ -243,7 +243,7 @@ button#submit:hover {
       right: 0;
       width: 100%;
       z-index: 998;
-      background-color: #00bfa5;
+     background-color: var(--primary);
       text-align: center;
       padding: 8px;  
       color: var(--text-dark);

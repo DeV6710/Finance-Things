@@ -119,6 +119,7 @@ body {
 
 .blog1Content img{
     width:100%;
+    margin-bottom: 50px;
 }
 
 
@@ -168,7 +169,7 @@ body {
     right: 0;
     width: 100%;
     z-index: 998;
-    background-color: #00bfa5;
+     background-color: var(--primary);
     text-align: center;
     padding: 8px;  
     color: var(--text-dark);
@@ -179,5 +180,9 @@ body {
             color: var(--text-dark);
             border: #222 3px solid;
             padding: 15px;
+    }
+
+    .blog1Content{
+        width: 90%;
     }
 }

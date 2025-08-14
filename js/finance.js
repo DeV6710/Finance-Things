@@ -27,9 +27,9 @@ function calculateTax() {
   }
   const netIncome = income - taxOwed;
   resultDiv.innerHTML = `
-    :dollar: <strong>Total Income:</strong> $${income.toFixed(2)}<br>
-    :chart_with_downwards_trend: <strong>Tax Owed:</strong> $${taxOwed.toFixed(2)}<br>
-    :receipt: <strong>Income After Tax:</strong> $${netIncome.toFixed(2)}
+    💲 <strong>Total Income:</strong> $${income.toFixed(2)}<br>
+    📈<strong>Tax Owed:</strong> $${taxOwed.toFixed(2)}<br>
+    🧾 <strong>Income After Tax:</strong> $${netIncome.toFixed(2)}
   `;
 }
 

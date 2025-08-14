@@ -73,6 +73,12 @@ body {
     border-radius: 8px;
 }
 
+.homeP{
+    font-family:sans-serif;
+    font-size: 25px;
+    margin: 5px;
+}
+
 #home_container {
     background-color: var(--accent);
     padding: 2rem;
@@ -148,7 +154,10 @@ body {
 #menu{
     display: none;
 }
-
+#aboutImg{
+    width: 50%;
+    height: 50%;
+}
 /* Feedback Section */
 #feedBack {
     background-color: var(--accent);
@@ -233,7 +242,7 @@ footer {
         right: 0;
         width: 100%;
         z-index: 998;
-        background-color: #00bfa5;
+     background-color: var(--primary);
         text-align: center;
         padding: 8px;  
         color: var(--text-dark);
